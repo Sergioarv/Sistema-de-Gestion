@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <form id="frm">
+        <div class="col-lg-6 col-lg-offset-3">
+            Usuario
+            <input type="text" name="user" />
+
+            Password
+            <input type="password" name="pass" />
+            <input type="button" class="btn btn-outline-primary" value="Entrar" />
+        </div>
+    </form>
+
+    @section scripts
+    {
+    <script>
+
+        $(document).ready(function () {
+            $("#frm"), submit(funtion(e)){
+                e.preventDefault();
+
+                url = "@Url.Content("~/Access/Index")"
+                parametros = $(this).serialize();
+
+                $.post(url, parametros, function (data) {
+                    if (data == "1") {
+                        document.location.href = "@Url.Content("~/")";
+                    }
+                })
+            })
+        })
+
+    </script>
+    }
+
+</div>
