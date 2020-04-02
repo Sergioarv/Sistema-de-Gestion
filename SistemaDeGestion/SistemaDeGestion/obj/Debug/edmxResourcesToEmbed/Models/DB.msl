@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataBasesSGCModelStoreContainer" CdmEntityContainer="DataBasesSGCEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="DataBasesSGCModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flyer">
+      <EntityTypeMapping TypeName="DataBasesSGCModel.Flyer">
+        <MappingFragment StoreEntitySet="Flyer">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Request">
+      <EntityTypeMapping TypeName="DataBasesSGCModel.Request">
+        <MappingFragment StoreEntitySet="Request">
+          <ScalarProperty Name="rutaFile" ColumnName="rutaFile" />
+          <ScalarProperty Name="fechaEntrega" ColumnName="fechaEntrega" />
+          <ScalarProperty Name="fechaSolicitud" ColumnName="fechaSolicitud" />
+          <ScalarProperty Name="origen" ColumnName="origen" />
+          <ScalarProperty Name="destino" ColumnName="destino" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

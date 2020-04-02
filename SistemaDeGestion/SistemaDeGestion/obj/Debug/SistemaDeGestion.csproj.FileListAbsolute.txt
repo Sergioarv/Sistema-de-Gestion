@@ -84,3 +84,7 @@ D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\obj\D
 D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\obj\Debug\SistemaDeGestion.csproj.CopyComplete
 D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\obj\Debug\SistemaDeGestion.dll
 D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\obj\Debug\SistemaDeGestion.pdb
+D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\bin\EntityFramework.dll
+D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\bin\EntityFramework.SqlServer.dll
+D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\bin\EntityFramework.xml
+D:\Sistema de Gestion\Sistema-de-Gestion\SistemaDeGestion\SistemaDeGestion\bin\EntityFramework.SqlServer.xml

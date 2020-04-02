@@ -10,33 +10,33 @@
         <div class="col-lg-6 col-lg-offset-3">
             Usuario
             <input type="text" name="user" />
-
             Password
             <input type="password" name="pass" />
-            <input type="button" class="btn btn-outline-primary" value="Entrar" />
+            <input type="submit" class="btn btn-success" value="Entrar" />
         </div>
     </form>
+</div>
 
-    @section scripts
-    {
-    <script>
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+        $("#frm").submit(function (e) {
+            e.preventDefault();
 
-        $(document).ready(function () {
-            $("#frm"), submit(funtion(e)){
-                e.preventDefault();
+            url = "@Url.Content("~/Access/Enter")"
 
-                url = "@Url.Content("~/Access/Index")"
-                parametros = $(this).serialize();
+            parametros = $(this).serialize();
 
-                $.post(url, parametros, function (data) {
-                    if (data == "1") {
-                        document.location.href = "@Url.Content("~/")";
-                    }
-                })
+            $.post(url, parametros, function (data) {
+
+                if (data == "1") {
+                    document.location.href = "@Url.Content("~/")"
+                } else {
+                    alert(data)
+                }
             })
         })
-
-    </script>
-    }
-
-</div>
+    })
+</script>
+}

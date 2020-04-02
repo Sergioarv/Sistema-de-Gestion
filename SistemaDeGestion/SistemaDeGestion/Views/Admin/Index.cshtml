@@ -1,0 +1,28 @@
+﻿@model List<SistemaDeGestion.Models.AdminModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+        <table class=" table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+
+            @foreach (var oElement in Model)
+            {
+                <tr>
+                    <td>@oElement.Id</td>
+                    <td>@oElement.Email</td>
+                    <td>@oElement.Password</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

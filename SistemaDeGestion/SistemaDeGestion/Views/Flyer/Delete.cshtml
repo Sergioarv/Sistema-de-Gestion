@@ -1,0 +1,52 @@
+﻿@model SistemaDeGestion.Models.DeleteFlyerModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>
+    ¿Estás seguro de que quieres eliminar esto?
+</h3>
+<div>
+    <h4>FlyerModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+
+        <dd>
+            @if (!string.IsNullOrEmpty(Model.Imagen))
+            {
+                <img src="@Url.Content(Model.Imagen)" alt="Image" style="width:200px; height:200px; max-width:100%; height:auto;" />
+            }
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Delete","Flyer", FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

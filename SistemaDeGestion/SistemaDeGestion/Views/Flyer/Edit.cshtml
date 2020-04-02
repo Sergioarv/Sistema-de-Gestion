@@ -1,0 +1,41 @@
+﻿@model SistemaDeGestion.Models.EditImageFlyer
+
+@{
+    ViewBag.Title = "Editar Flyer";
+}
+
+<h2>Editar</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+
+        @using (Html.BeginForm("Edit", "Flyer", FormMethod.Post, new { role = "form", @class = "", enctype = "multipart/form-data" }))
+        {
+            @Html.HiddenFor(d => d.Id)
+            @Html.ValidationMessage("Error", new { @class = "text-danger" })
+
+            @Html.LabelFor(d => d.Name)
+            @Html.TextBoxFor(d => d.Name, new { @class = "form-control" })
+            @Html.ValidationMessage("Nombre", new { @class = "text-danger" })
+            <br />
+
+            @Html.LabelFor(d => d.Description)
+            @Html.TextBoxFor(d => d.Description, new { @class = "form-control" })
+            @Html.ValidationMessage("Description", new { @class = "text-danger" })
+            <br />
+
+            @Html.LabelFor(d => d.ImageFile)
+            @Html.TextBoxFor(d => d.ImageFile, new { Type = "file" })
+            <br />
+
+            <div style="text-align:right">
+                <input type="submit" class="btn btn-success" value="Aceptar" />
+            </div>
+        }
+
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
